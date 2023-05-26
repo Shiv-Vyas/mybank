@@ -1,5 +1,5 @@
 import React from "react";
-
+import Signout from "./signout";
 import {
     Container,
     Row,
@@ -42,6 +42,7 @@ function Home({}) {
 
 return(<div className="bodyHome">
     <Interval />
+    <Signout></Signout>
  <Container className="margincontainer" fluid>
      <Row className="rowDimensions">
          <Col sm={12} md={4} className="ColumnLeft">
