@@ -1,9 +1,30 @@
 .App {
   text-align: center;
+  display: flex;
+  height: 100%;
+  width: 100%;;
+  
+}
+.bodyHome{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:-5;
+  background-color: #FAFCFD;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 120vh;
+  background-position: 0% 0%;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 .App-logo {
-  height: 40vmin;
+
   pointer-events: none;
 }
 
@@ -13,6 +34,22 @@
   }
 }
 
+.circleText{
+  font-size: 4.3vh;
+  color: #2c2c54;
+  font-family:"Merriweather Sans";
+  position: absolute;
+  top:20%;
+  font-weight: 700;
+  text-shadow: 0px 0px 5px blue;
+}
+
+.back{
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +72,176 @@
   to {
     transform: rotate(360deg);
   }
+}
+.rowDimensions{
+  text-align: center;
+}
+
+.imageContainer{
+  position: relative;
+height: 25vh;
+width: 30vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.textContainer{
+  margin-top: 35vh;
+}
+.imageContainerBottom{
+  margin-top: 10vh;
+  position: relative;
+height: 25vh;
+width: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ColumnLeftBottom{
+  
+display: flex;
+justify-content: right;
+align-items: center;
+}
+
+.ColumnRightBottom{
+  display: flex;
+justify-content: left;
+align-items: center;
+}
+
+.showAlertDanger{
+  background-color: rgb(236, 195, 195);
+  padding:1rem;
+  border-radius:0.7vh;
+  border-style:solid;
+  border-width:1px;
+  border-color:rgb(255, 201, 201); 
+  color: rgb(80, 0, 0);
+  visibility: visible;
+  position: relative;
+}
+
+.defaultHidden{
+  visibility: hidden;
+  position: fixed;
+}
+.showAlertSuccess{
+  
+  background-color: rgb(220, 248, 239);
+  padding:1rem;
+  border-radius:0.7vh;
+  border-style:solid;
+  border-width:1px;
+  border-color:rgb(179, 201, 188); 
+  color: rgb(0, 41, 7);
+  visibility: visible;
+  position: relative;
+}
+.ColumnLeft{
+  display: flex;
+justify-content: right;
+align-items: center;
+}
+.Column{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.ColumnRight{
+  display: flex;
+justify-content: left;
+align-items: center;
+}
+.margincontainer{
+ margin-top: 13vh;
+  width: 100%;
+  
+  padding: 3vh 3vh;
+}
+.formContainer{
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding: 10% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.divMid{
+  position:absolute;
+  top: 0;
+  height:21vh;
+  width:21vh;
+  border-radius: 15vh;
+  box-shadow: 0px 0px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.listGroup{
+  background-color:#F8FBFF; 
+  padding:2vh 0vh 0.5vh 0vh;
+}
+
+.cards{
+  width:50vh;
+  text-align: center;
+  margin: 2vh 0vh 2vh 0vh;
+  box-shadow: 2px 2px 3vh 1px lightgray;
+}
+
+.loginForm{
+  box-shadow: 2px 2px 3vh 2px #192a56;
+  border-style: solid;
+  padding: 3vh 5vh 0vh 5vh;
+  border-radius: 3vh;
+  background-color: white;
+  border-color:#192a56;
+  text-align:left;
+  
+}
+.divCircles{
+  position:absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 20px 1px #192a56;
+  border-color: #192a56;
+  border-style: solid;
+  border-width: 0.8vh;
+  border-radius: 15vh;
+  height:15vh;
+  width:15vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: 80%;  
+}
+
+.cardContainer{
+  margin-top: 20vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.divCircles:hover{
+  transition:0.2s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+.outOfFlow{
+  position: fixed;
+  visibility: hidden;
+  z-index: 1;
+}
+.success{
+  position: relative;
+  margin-top: 2vh;
+  visibility: visible;
 }
