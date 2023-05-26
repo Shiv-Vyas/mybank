@@ -70,7 +70,7 @@ function Deposit() {
                         errorUpdate("hidden")
                         negativeUpdate("none")
 
-                        sessionStorage.setItem("userData", res.data)
+                        sessionStorage.setItem("userData", JSON.stringify(res.data))
                     }
                 })
             } catch (e) {
